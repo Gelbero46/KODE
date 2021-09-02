@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+  
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #E5E5E5;
+    margin: 3rem auto 4rem auto;
+    max-width: 1080px;
+    font-family: 'Roboto', sans-serif;
+}
+body > * + * {
+    margin-top: 6rem;
+    /* border: 1px solid #000; */
+}
+
+header h1 {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+}
+
+.main > * + * {
+    margin-left: 3rem;
+    align-self: center;
+}
+.section-1 h2{
+    text-align: center;
+    margin-bottom: .5rem;
+
+}
+.line {
+    width: 50px;
+    border: 3px solid #D89616;
+    background-color: #D89616;
+    margin: 0 auto;
+}
+.mad-space {
+    margin-bottom: 5rem;
+}
+
+.aside {
+    background-color: #fff;
+    padding: 2rem 8rem;
+    border-radius: 5px;
+    box-shadow: 2px 6px 11px -1px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 2px 6px 11px -1px rgba(0,0,0,0.56);
+    -moz-box-shadow: 2px 6px 11px -1px rgba(0,0,0,0.56);
+}
+.aside input:not([type="submit"]), 
+.aside textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    height: 43px;
+}
+.aside textarea {
+    height: 160px;
+}
+
+.aside form > * + * {
+    margin-top: 1rem;
+}
+.aside h1 {
+    font-weight: 500;
+    font-size: 50px;
+    color: #0D0C0C;
+}
+.aside form div label {
+    display: block;
+    margin-bottom: .5rem;
+    font-size: 18px;
+    font-weight: normal
+}
+.aside .submit {
+    text-align: right;
+}
+.aside .submit input{
+    background: rgba(0, 77, 230, 0.76);
+    border: none;
+    border-radius: 6px;
+    padding: .4rem 4rem;
+    color: #fff;
+} 
+.submit input:hover {
+    cursor: pointer;
+    background: rgba(0, 17, 255, 0.76);
+}
+
+@media (max-width: 700px) {
+    .main {
+        display: block;
+    }
+    .main > img {
+        width: 100%;
+    }
+    .main > * + * {
+        margin: 1rem 2rem;
+        align-self: center;
+    }
+    .aside {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .aside{
+        padding: 2rem 3rem;
+    }   
+}
+
+@media (max-width:380px) {
+    .aside h1 {
+        text-align: center;
+    }
+}
